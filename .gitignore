@@ -1,10 +1,20 @@
-*.log
-.DS_Store
+# Environment files
 .env
 .env.backup
 .env.production
-.phpactor.json
+
+# Logs and runtime caches
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
 .phpunit.result.cache
+.phpunit.cache
+
+# OS and editor files
+.DS_Store
+Thumbs.db
 /.codex
 /.cursor/
 /.idea
@@ -12,15 +22,20 @@
 /.phpunit.cache
 /.vscode
 /.zed
+
+# Local tooling / auth
 /auth.json
+_ide_helper.php
+Homestead.json
+Homestead.yaml
+
+# Dependencies and build output
 /node_modules
 /public/build
 /public/hot
 /public/storage
+/vendor
+
+# Storage artifacts
 /storage/*.key
 /storage/pail
-/vendor
-_ide_helper.php
-Homestead.json
-Homestead.yaml
-Thumbs.db

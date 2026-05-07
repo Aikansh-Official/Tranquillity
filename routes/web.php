@@ -22,7 +22,7 @@ Route::middleware(['auth', 'verified'])->group(function () {
     })->name('journal');
 
     Route::get('/profile', function () {
-        return view('profile.profile');
+        return view('profile');
     })->name('profile.edit');
 });
 
