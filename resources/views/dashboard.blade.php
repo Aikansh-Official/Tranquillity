@@ -241,42 +241,33 @@
                     </a>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <a href="{{ route('session', ['technique' => 2]) }}" class="technique-card-rec group cursor-pointer block bg-surface-container-low rounded-lg overflow-hidden hover:-translate-y-1 transition-all duration-300 hover:shadow-md">
+                    @foreach($techniques as $technique)
+                    @php
+                        $slug = Str::slug(str_replace(['The Morning ', 'The '], '', $technique->title), '_');
+                        // Mapping some images since we don't have them in DB
+                        $images = [
+                            'box_breathing' => 'https://lh3.googleusercontent.com/aida-public/AB6AXuDYfhjlOTMOlhNMN3UFcBSCF3PW_cGTuyhL0deJFbnVQq_e1ijHHtDrKhrAutqhU3FGnTftFrweTRK64lJfmMm8jgtazbShj-K3zzzR4RR-7n7VvOApnpIwXAwbluDMnBk8Q-uMXTrWzU5bkkttD3i9d6ZN4JueTUC69uMY1iNWqCW1LLsxFOrZlGis-_ZIUHzD7MYT6szJhCBysjHMXSIgxruxZ7CfhIQqRm7zP2tHfM2g7cCQu1Z9lBOVfc2g4x1vcQpMK74E9xg',
+                            'ocean_floor_breath' => 'https://lh3.googleusercontent.com/aida-public/AB6AXuD641yDleDsg5PWLvmLl_F5WHL4qRzKkW5ceXhWfHBBm3q0DoVl5mowv9Ly3vtjtPgYoYJpYPi1VAl572dn0GINQgBV2YGGFBiKwo-kFv0A4YK-K_gOirTwPsDfoi2QAm9DVI8EM4wpg0g3DZlHF5npnxC6tQ2PTwADAilvs2dM5Oas-UgRYDdvGTrqIFbxIu5_VLoTAl-9QaQgFjLwJxz-OZulhf2hflVVGOS80scZZfBq2NvXIuZLVzp6yLFYkIpP4dYlMg6EDuU',
+                            'body_scan_release' => 'https://lh3.googleusercontent.com/aida-public/AB6AXuCiDJWzrlKw8XRnM4UqhlGTvw0hu5BEm8mLIWil29-nGPBtUF59io9QP5l-bJjtmrzoFKjCqfOJNjRQd48vUOgUot8YUtXug1vH5H_3ORjolqqaF7sjw9dNgSZ-z8RUbcO6y78gc2_8yZh6lg1Yn4S2wvqHezdEi4Q3A5A3oY1oj-9MCgQ17LgNoxXpo1-Uq-TZtTZW1Z2ftZPcpxM4ACyVijAZSQKn55Ar-UElU_mOnDavEeqAYS71dUGqRLXXW_tmFJpcvWXCvIw',
+                            'gratitude_flow' => 'https://lh3.googleusercontent.com/aida-public/AB6AXuCdhx5-tAfBZxYCIZtjgEIOnwGiALQ8Qql-8Wzno8-HB8tWTOJVs7hGbcTMOuRXPlMfIdW4sT5pz8UhN720GU5lABmqa40Frpf_bcevanbTXN6uNMXXGOGf4TttqLq0yspdXsCupT_Z7I170mIIWsq0P5T5paRYyl77ZP7-vtQ7omiavaU-pWBu5RHVBUA0Pnwm0ft_NztB6Pg3O4KDraP1xAgoeJ9y2f53tGzWkmFP6uJllf3TCSPISp4vQjgTZ2N9hWwd5lTRLLc',
+                            'sun_salutation' => 'https://lh3.googleusercontent.com/aida-public/AB6AXuCtQT1Elom5CU9ke9V2QKSOhzL4YRWMbDBRYV4KsjRP59eF5WpkQQBPwPLGnwTmsvHPVwWOyQJKWZAdfmXmKc4auNS8dB6QgadwenC5SA4o7pdhzT4FXO6FyWoTq67YDGieHfID8VCY4BCAXuztsnT-SQaXJe5j-BO-MOGDKJz6EFx9gHL5ZVYTVan1LIJ_QHy_oFVcEp9q6PZ7eNH_gmfUApNHvhP6lA2twqg7Z5YnwIPNTQBDX2P3H1H7j0w_eyICLpSXuLDAlMY',
+                            '4_7_8_ritual' => 'https://lh3.googleusercontent.com/aida-public/AB6AXuAGZk9Tsl_O8fTYZqu9acmOfG997vJZJQvVdawWRxqppRSH-OwUWQ8WK-BCOqoTM5QWiOBk37--mJ3yeBCDHfGWOPYYGVH-Wp9fO2jdYRtpxboXTjsW4L7R14iV6yILdzScX8n5EMGsx-QfFbuJq9_fyv-qkuD5WYbUw_QG5CqPPZ4t2bSndzQVEG4AiDCC_0pFOZ2ZyTnz6KRwwLnMl_DO0brF4kfu_F4SkFr8foVygOn1chFzmJFDWdhAaHdGoTuwoJ5OYuMISTg'
+                        ];
+                        $image = $images[$slug] ?? 'https://images.unsplash.com/photo-1518241353330-0f7941c2d9b5?auto=format&fit=crop&w=800&q=80';
+                    @endphp
+                    <a href="{{ route('session', $technique->id) }}" class="technique-card-rec group cursor-pointer block bg-surface-container-low rounded-lg overflow-hidden hover:-translate-y-1 transition-all duration-300 hover:shadow-md">
                         <div class="aspect-[4/3] overflow-hidden bg-surface-container relative">
-                            <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCPo1cROp0EdZ8jLJaVwDEUDz7BNCMN07lJIxZwgOhouC8pyIwvy3T8h1JvnLlRCL4_CEUoYudp52jPPCVCIu9ksLjoMK3Bh6FAAKBBzl6re4R9Pae0deqVV0eeaeeTtbhfuAgvwSPhrLrPMhAOFjY5zbRU7Z8OCYfjj9oCdizjmSk2lUd4qP3W3DyZg-225Rh95GZRoKwyzxc6b4V8k3L7xwy0_VAqnXJ2lgxjDodr3I_3XTZW0e8Npg1NhiajTWs0MWapSQF12FA"/>
+                            <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="{{ $image }}"/>
                             <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
-                                <span class="text-white font-medium flex items-center gap-2">Start Session <span class="material-symbols-outlined" data-icon="play_circle">play_circle</span></span>
+                                <span class="text-white font-medium flex items-center gap-2">Start Session <span class="material-symbols-outlined">play_circle</span></span>
                             </div>
                         </div>
                         <div class="p-4">
-                            <h4 class="serif-font text-xl text-on-surface mb-1">Forest Breathwork</h4>
-                            <p class="text-on-surface-variant text-sm">12 Minutes • Grounding</p>
+                            <h4 class="serif-font text-xl text-on-surface mb-1">{{ $technique->title }}</h4>
+                            <p class="text-on-surface-variant text-sm">{{ $technique->duration_mins }} Minutes • {{ ucfirst($technique->category) }}</p>
                         </div>
                     </a>
-                    <a href="{{ route('session', ['technique' => 3]) }}" class="technique-card-rec group cursor-pointer block bg-surface-container-low rounded-lg overflow-hidden hover:-translate-y-1 transition-all duration-300 hover:shadow-md">
-                        <div class="aspect-[4/3] overflow-hidden bg-surface-container relative">
-                            <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCiDJWzrlKw8XRnM4UqhlGTvw0hu5BEm8mLIWil29-nGPBtUF59io9QP5l-bJjtmrzoFKjCqfOJNjRQd48vUOgUot8YUtXug1vH5H_3ORjolqqaF7sjw9dNgSZ-z8RUbcO6y78gc2_8yZh6lg1Yn4S2wvqHezdEi4Q3A5A3oY1oj-9MCgQ17LgNoxXpo1-Uq-TZtTZW1Z2ftZPcpxM4ACyVijAZSQKn55Ar-UElU_mOnDavEeqAYS71dUGqRLXXW_tmFJpcvWXCvIw"/>
-                            <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
-                                <span class="text-white font-medium flex items-center gap-2">Start Session <span class="material-symbols-outlined" data-icon="play_circle">play_circle</span></span>
-                            </div>
-                        </div>
-                        <div class="p-4">
-                            <h4 class="serif-font text-xl text-on-surface mb-1">Body Scan Meditation</h4>
-                            <p class="text-on-surface-variant text-sm">15 Minutes • Awareness</p>
-                        </div>
-                    </a>
-                    <a href="{{ route('session', ['technique' => 6]) }}" class="technique-card-rec group cursor-pointer block bg-surface-container-low rounded-lg overflow-hidden hover:-translate-y-1 transition-all duration-300 hover:shadow-md">
-                        <div class="aspect-[4/3] overflow-hidden bg-surface-container relative">
-                            <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVQP8b0XxjuD6oVUYZCYBF7wejnTpaA9A5NtOI6iprEfjp59XpoLp29sXltKTHzQKdDT-07IC41PnTpsWrAP-Asd0XSB4UCiE04ddRLxe_p2KNP_2z0NlK6D7xk4Gj8TMOH65ckH9cfS27IjaIPh6PcDFNoSWXSd4ASD3uZzfYSzQWQNfTjdRp7UZO2o-6LBUeiz9JoFXJ6Kaihn95sVv-Ikt99Er3rxW_5aGcTJ5tpbGWkHsjYpydyJ4mgfiC3jNVk82ngoSpPrY"/>
-                            <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
-                                <span class="text-white font-medium flex items-center gap-2">Start Session <span class="material-symbols-outlined" data-icon="play_circle">play_circle</span></span>
-                            </div>
-                        </div>
-                        <div class="p-4">
-                            <h4 class="serif-font text-xl text-on-surface mb-1">Evening Unwind</h4>
-                            <p class="text-on-surface-variant text-sm">8 Minutes • Deep Sleep</p>
-                        </div>
-                    </a>
+                    @endforeach
                 </div>
             </div>
             <div class="md:col-span-12 bg-surface-container-high rounded-xl p-10 flex flex-col md:flex-row gap-12 items-center justify-between mt-8">

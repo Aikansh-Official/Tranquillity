@@ -141,101 +141,54 @@
 </section>
 <!-- Asymmetric Bento Grid Library -->
 <div class="editorial-grid">
-<!-- Featured Card - Meditation -->
-<div data-category="meditation" class="technique-card col-span-12 lg:col-span-8 bg-surface-container-low rounded-xl p-8 flex flex-col md:flex-row gap-8 items-center shadow-[0_20px_50px_rgba(57,56,50,0.04)] hover:shadow-lg transition-shadow duration-500">
-<div class="w-full md:w-1/2 aspect-square rounded-lg overflow-hidden">
-<img class="w-full h-full object-cover" data-alt="serene woman meditating in a soft-lit minimalist room with flowing linen curtains and morning sunlight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD641yDleDsg5PWLvmLl_F5WHL4qRzKkW5ceXhWfHBBm3q0DoVl5mowv9Ly3vtjtPgYoYJpYPi1VAl572dn0GINQgBV2YGGFBiKwo-kFv0A4YK-K_gOirTwPsDfoi2QAm9DVI8EM4wpg0g3DZlHF5npnxC6tQ2PTwADAilvs2dM5Oas-UgRYDdvGTrqIFbxIu5_VLoTAl-9QaQgFjLwJxz-OZulhf2hflVVGOS80scZZfBq2NvXIuZLVzp6yLFYkIpP4dYlMg6EDuU"/>
-</div>
-<div class="w-full md:w-1/2 flex flex-col justify-center">
-<div class="flex items-center gap-3 mb-4">
-<span class="px-3 py-1 bg-secondary-container text-on-secondary-container rounded-full text-[10px] uppercase tracking-widest font-bold">Meditation</span>
-<span class="text-on-surface-variant text-sm font-medium">20 mins</span>
-</div>
-<h3 class="font-headline text-3xl mb-4 text-on-surface">The Ocean Floor Breath</h3>
-<p class="text-on-surface-variant font-body mb-8 leading-relaxed">Deepen your focus by visualizing the stillness of the deep sea while maintaining rhythmic tidal breathing patterns.</p>
-<a href="{{ route('technique.show', 2) }}" class="self-start text-primary font-bold border-b border-primary/30 pb-1 hover:border-primary transition-all block mt-4">Begin Practice</a>
-</div>
-</div>
-<!-- Standard Card 1 - Breathing -->
-<div data-category="breathing" class="technique-card col-span-12 md:col-span-6 lg:col-span-4 bg-surface-container-lowest rounded-xl p-8 flex flex-col shadow-[0_20px_50px_rgba(57,56,50,0.03)] border border-outline-variant/10">
-<div class="h-48 rounded-lg overflow-hidden mb-6">
-<img class="w-full h-full object-cover" data-alt="atmospheric shot of fog rolling over a calm forest lake at dawn with ethereal cool lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDYfhjlOTMOlhNMN3UFcBSCF3PW_cGTuyhL0deJFbnVQq_e1ijHHtDrKhrAutqhU3FGnTftFrweTRK64lJfmMm8jgtazbShj-K3zzzR4RR-7n7VvOApnpIwXAwbluDMnBk8Q-uMXTrWzU5bkkttD3i9d6ZN4JueTUC69uMY1iNWqCW1LLsxFOrZlGis-_ZIUHzD7MYT6szJhCBysjHMXSIgxruxZ7CfhIQqRm7zP2tHfM2g7cCQu1Z9lBOVfc2g4x1vcQpMK74E9xg"/>
-</div>
-<div class="flex items-center gap-3 mb-3">
-<span class="px-3 py-1 bg-primary-container text-on-primary-container rounded-full text-[10px] uppercase tracking-widest font-bold">Breathing</span>
-<span class="text-on-surface-variant text-xs">5 mins</span>
-</div>
-<h3 class="font-headline text-2xl mb-4">Box Breathing</h3>
-<p class="text-on-surface-variant text-sm mb-6 flex-grow">A tactical tool to reset the nervous system. Four seconds in, four hold, four out, four hold.</p>
-<div class="flex justify-between items-center mt-auto">
-<span class="material-symbols-outlined text-outline cursor-pointer">favorite</span>
-<a href="{{ route('session', 1) }}" class="material-symbols-outlined text-primary hover:scale-110 transition-transform">play_circle</a>
-</div>
-</div>
-<!-- Standard Card 2 - Physical -->
-<div data-category="physical" class="technique-card col-span-12 md:col-span-6 lg:col-span-4 bg-surface-container-lowest rounded-xl p-8 flex flex-col shadow-[0_20px_50px_rgba(57,56,50,0.03)] border border-outline-variant/10">
-<div class="h-48 rounded-lg overflow-hidden mb-6">
-<img class="w-full h-full object-cover" data-alt="close up of smooth basalt stones stacked on a wooden surface with soft blurred background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCtQT1Elom5CU9ke9V2QKSOhzL4YRWMbDBRYV4KsjRP59eF5WpkQQBPwPLGnwTmsvHPVwWOyQJKWZAdfmXmKc4auNS8dB6QgadwenC5SA4o7pdhzT4FXO6FyWoTq67YDGieHfID8VCY4BCAXuztsnT-SQaXJe5j-BO-MOGDKJz6EFx9gHL5ZVYTVan1LIJ_QHy_oFVcEp9q6PZ7eNH_gmfUApNHvhP6lA2twqg7Z5YnwIPNTQBDX2P3H1H7j0w_eyICLpSXuLDAlMY"/>
-</div>
-<div class="flex items-center gap-3 mb-3">
-<span class="px-3 py-1 bg-tertiary-container text-on-tertiary-container rounded-full text-[10px] uppercase tracking-widest font-bold">Physical</span>
-<span class="text-on-surface-variant text-xs">15 mins</span>
-</div>
-<h3 class="font-headline text-2xl mb-4">Body Scan Release</h3>
-<p class="text-on-surface-variant text-sm mb-6 flex-grow">Progressively relax every muscle group from your crown to your toes, releasing stored tension.</p>
-<div class="flex justify-between items-center mt-auto">
-<span class="material-symbols-outlined text-outline cursor-pointer">favorite</span>
-<a href="{{ route('session', 3) }}" class="material-symbols-outlined text-primary hover:scale-110 transition-transform">play_circle</a>
-</div>
-</div>
-<!-- Standard Card 3 - Journaling -->
-<div data-category="journaling" class="technique-card col-span-12 md:col-span-6 lg:col-span-4 bg-surface-container-lowest rounded-xl p-8 flex flex-col shadow-[0_20px_50px_rgba(57,56,50,0.03)] border border-outline-variant/10">
-<div class="h-48 rounded-lg overflow-hidden mb-6">
-<img class="w-full h-full object-cover" data-alt="a high-end textured paper notebook and a wooden pen on a clean stone desk in natural light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCdhx5-tAfBZxYCIZtjgEIOnwGiALQ8Qql-8Wzno8-HB8tWTOJVs7hGbcTMOuRXPlMfIdW4sT5pz8UhN720GU5lABmqa40Frpf_bcevanbTXN6uNMXXGOGf4TttqLq0yspdXsCupT_Z7I170mIIWsq0P5T5paRYyl77ZP7-vtQ7omiavaU-pWBu5RHVBUA0Pnwm0ft_NztB6Pg3O4KDraP1xAgoeJ9y2f53tGzWkmFP6uJllf3TCSPISp4vQjgTZ2N9hWwd5lTRLLc"/>
-</div>
-<div class="flex items-center gap-3 mb-3">
-<span class="px-3 py-1 bg-secondary-container text-on-secondary-container rounded-full text-[10px] uppercase tracking-widest font-bold">Journaling</span>
-<span class="text-on-surface-variant text-xs">10 mins</span>
-</div>
-<h3 class="font-headline text-2xl mb-4">Gratitude Flow</h3>
-<p class="text-on-surface-variant text-sm mb-6 flex-grow">A guided prompt series to help you identify the subtle moments of beauty in your daily landscape.</p>
-<div class="flex justify-between items-center mt-auto">
-<span class="material-symbols-outlined text-outline cursor-pointer">favorite</span>
-<a href="{{ route('journal') }}" class="material-symbols-outlined text-primary hover:scale-110 transition-transform">edit_note</a>
-</div>
-</div>
-<!-- Special Large Card - Physical -->
-<div data-category="physical" class="technique-card col-span-12 lg:col-span-4 bg-primary text-on-primary rounded-xl p-10 flex flex-col justify-between shadow-2xl overflow-hidden relative group">
-<div class="absolute -right-10 -top-10 w-40 h-40 bg-white/5 rounded-full blur-3xl group-hover:scale-150 transition-transform duration-700"></div>
-<div>
-<h3 class="font-headline text-3xl mb-4 leading-snug">The Morning Sun Salutation</h3>
-<p class="text-on-primary/80 mb-8 font-body">A vibrant physical sequence to awaken the spirit and align the body's energy channels with the day ahead.</p>
-</div>
-<div class="flex items-center justify-between">
-<div class="flex flex-col">
-<span class="text-xs uppercase tracking-widest opacity-60 mb-1">Level</span>
-<span class="font-bold">Beginner</span>
-</div>
-<a href="{{ route('session', 5) }}" class="bg-surface-container-lowest text-primary rounded-full px-6 py-2 font-bold shadow-sm hover:scale-105 transition-all inline-block">Open Guide</a>
-</div>
-</div>
+    @foreach($techniques as $technique)
+    @php
+        $slug = Str::slug(str_replace(['The Morning ', 'The '], '', $technique->title), '_');
+        $images = [
+            'box_breathing' => 'https://lh3.googleusercontent.com/aida-public/AB6AXuDYfhjlOTMOlhNMN3UFcBSCF3PW_cGTuyhL0deJFbnVQq_e1ijHHtDrKhrAutqhU3FGnTftFrweTRK64lJfmMm8jgtazbShj-K3zzzR4RR-7n7VvOApnpIwXAwbluDMnBk8Q-uMXTrWzU5bkkttD3i9d6ZN4JueTUC69uMY1iNWqCW1LLsxFOrZlGis-_ZIUHzD7MYT6szJhCBysjHMXSIgxruxZ7CfhIQqRm7zP2tHfM2g7cCQu1Z9lBOVfc2g4x1vcQpMK74E9xg',
+            'ocean_floor_breath' => 'https://lh3.googleusercontent.com/aida-public/AB6AXuD641yDleDsg5PWLvmLl_F5WHL4qRzKkW5ceXhWfHBBm3q0DoVl5mowv9Ly3vtjtPgYoYJpYPi1VAl572dn0GINQgBV2YGGFBiKwo-kFv0A4YK-K_gOirTwPsDfoi2QAm9DVI8EM4wpg0g3DZlHF5npnxC6tQ2PTwADAilvs2dM5Oas-UgRYDdvGTrqIFbxIu5_VLoTAl-9QaQgFjLwJxz-OZulhf2hflVVGOS80scZZfBq2NvXIuZLVzp6yLFYkIpP4dYlMg6EDuU',
+            'body_scan_release' => 'https://lh3.googleusercontent.com/aida-public/AB6AXuCiDJWzrlKw8XRnM4UqhlGTvw0hu5BEm8mLIWil29-nGPBtUF59io9QP5l-bJjtmrzoFKjCqfOJNjRQd48vUOgUot8YUtXug1vH5H_3ORjolqqaF7sjw9dNgSZ-z8RUbcO6y78gc2_8yZh6lg1Yn4S2wvqHezdEi4Q3A5A3oY1oj-9MCgQ17LgNoxXpo1-Uq-TZtTZW1Z2ftZPcpxM4ACyVijAZSQKn55Ar-UElU_mOnDavEeqAYS71dUGqRLXXW_tmFJpcvWXCvIw',
+            'gratitude_flow' => 'https://lh3.googleusercontent.com/aida-public/AB6AXuCdhx5-tAfBZxYCIZtjgEIOnwGiALQ8Qql-8Wzno8-HB8tWTOJVs7hGbcTMOuRXPlMfIdW4sT5pz8UhN720GU5lABmqa40Frpf_bcevanbTXN6uNMXXGOGf4TttqLq0yspdXsCupT_Z7I170mIIWsq0P5T5paRYyl77ZP7-vtQ7omiavaU-pWBu5RHVBUA0Pnwm0ft_NztB6Pg3O4KDraP1xAgoeJ9y2f53tGzWkmFP6uJllf3TCSPISp4vQjgTZ2N9hWwd5lTRLLc',
+            'sun_salutation' => 'https://lh3.googleusercontent.com/aida-public/AB6AXuCtQT1Elom5CU9ke9V2QKSOhzL4YRWMbDBRYV4KsjRP59eF5WpkQQBPwPLGnwTmsvHPVwWOyQJKWZAdfmXmKc4auNS8dB6QgadwenC5SA4o7pdhzT4FXO6FyWoTq67YDGieHfID8VCY4BCAXuztsnT-SQaXJe5j-BO-MOGDKJz6EFx9gHL5ZVYTVan1LIJ_QHy_oFVcEp9q6PZ7eNH_gmfUApNHvhP6lA2twqg7Z5YnwIPNTQBDX2P3H1H7j0w_eyICLpSXuLDAlMY',
+            '4_7_8_ritual' => 'https://lh3.googleusercontent.com/aida-public/AB6AXuAGZk9Tsl_O8fTYZqu9acmOfG997vJZJQvVdawWRxqppRSH-OwUWQ8WK-BCOqoTM5QWiOBk37--mJ3yeBCDHfGWOPYYGVH-Wp9fO2jdYRtpxboXTjsW4L7R14iV6yILdzScX8n5EMGsx-QfFbuJq9_fyv-qkuD5WYbUw_QG5CqPPZ4t2bSndzQVEG4AiDCC_0pFOZ2ZyTnz6KRwwLnMl_DO0brF4kfu_F4SkFr8foVygOn1chFzmJFDWdhAaHdGoTuwoJ5OYuMISTg'
+        ];
+        $image = $images[$slug] ?? 'https://images.unsplash.com/photo-1518241353330-0f7941c2d9b5?auto=format&fit=crop&w=800&q=80';
+        $isFeatured = ($loop->first);
+    @endphp
 
-<!-- Card 6 - Breathing -->
-<div data-category="breathing" class="technique-card col-span-12 md:col-span-6 lg:col-span-4 bg-surface-container-lowest rounded-xl p-8 flex flex-col shadow-[0_20px_50px_rgba(57,56,50,0.03)] border border-outline-variant/10">
-<div class="h-48 rounded-lg overflow-hidden mb-6">
-<img class="w-full h-full object-cover" data-alt="vibrant green fern leaf detail with morning dew drops and soft bokeh lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAGZk9Tsl_O8fTYZqu9acmOfG997vJZJQvVdawWRxqppRSH-OwUWQ8WK-BCOqoTM5QWiOBk37--mJ3yeBCDHfGWOPYYGVH-Wp9fO2jdYRtpxboXTjsW4L7R14iV6yILdzScX8n5EMGsx-QfFbuJq9_fyv-qkuD5WYbUw_QG5CqPPZ4t2bSndzQVEG4AiDCC_0pFOZ2ZyTnz6KRwwLnMl_DO0brF4kfu_F4SkFr8foVygOn1chFzmJFDWdhAaHdGoTuwoJ5OYuMISTg"/>
-</div>
-<div class="flex items-center gap-3 mb-3">
-<span class="px-3 py-1 bg-primary-container text-on-primary-container rounded-full text-[10px] uppercase tracking-widest font-bold">Breathing</span>
-<span class="text-on-surface-variant text-xs">8 mins</span>
-</div>
-<h3 class="font-headline text-2xl mb-4">4-7-8 Ritual</h3>
-<p class="text-on-surface-variant text-sm mb-6 flex-grow">The classic "natural tranquilizer" for the nervous system, ideal for evening relaxation and sleep prep.</p>
-<div class="flex justify-between items-center mt-auto">
-<span class="material-symbols-outlined text-outline cursor-pointer">favorite</span>
-<a href="{{ route('session', 6) }}" class="material-symbols-outlined text-primary hover:scale-110 transition-transform">play_circle</a>
-</div>
-</div>
+    @if($isFeatured)
+    <div data-category="{{ $technique->category }}" class="technique-card col-span-12 lg:col-span-8 bg-surface-container-low rounded-xl p-8 flex flex-col md:flex-row gap-8 items-center shadow-[0_20px_50px_rgba(57,56,50,0.04)] hover:shadow-lg transition-shadow duration-500">
+        <div class="w-full md:w-1/2 aspect-square rounded-lg overflow-hidden">
+            <img class="w-full h-full object-cover" src="{{ $image }}"/>
+        </div>
+        <div class="w-full md:w-1/2 flex flex-col justify-center">
+            <div class="flex items-center gap-3 mb-4">
+                <span class="px-3 py-1 bg-secondary-container text-on-secondary-container rounded-full text-[10px] uppercase tracking-widest font-bold">{{ ucfirst($technique->category) }}</span>
+                <span class="text-on-surface-variant text-sm font-medium">{{ $technique->duration_mins }} mins</span>
+            </div>
+            <h3 class="font-headline text-3xl mb-4 text-on-surface">{{ $technique->title }}</h3>
+            <p class="text-on-surface-variant font-body mb-8 leading-relaxed">{{ $technique->description }}</p>
+            <a href="{{ route('technique.show', $technique->id) }}" class="self-start text-primary font-bold border-b border-primary/30 pb-1 hover:border-primary transition-all block mt-4">Begin Practice</a>
+        </div>
+    </div>
+    @else
+    <div data-category="{{ $technique->category }}" class="technique-card col-span-12 md:col-span-6 lg:col-span-4 bg-surface-container-lowest rounded-xl p-8 flex flex-col shadow-[0_20px_50px_rgba(57,56,50,0.03)] border border-outline-variant/10">
+        <div class="h-48 rounded-lg overflow-hidden mb-6">
+            <img class="w-full h-full object-cover" src="{{ $image }}"/>
+        </div>
+        <div class="flex items-center gap-3 mb-3">
+            <span class="px-3 py-1 bg-primary-container text-on-primary-container rounded-full text-[10px] uppercase tracking-widest font-bold">{{ ucfirst($technique->category) }}</span>
+            <span class="text-on-surface-variant text-xs">{{ $technique->duration_mins }} mins</span>
+        </div>
+        <h3 class="font-headline text-2xl mb-4">{{ $technique->title }}</h3>
+        <p class="text-on-surface-variant text-sm mb-6 flex-grow">{{ $technique->description }}</p>
+        <div class="flex justify-between items-center mt-auto">
+            <span class="material-symbols-outlined text-outline cursor-pointer">favorite</span>
+            <a href="{{ route('session', $technique->id) }}" class="material-symbols-outlined text-primary hover:scale-110 transition-transform">play_circle</a>
+        </div>
+    </div>
+    @endif
+    @endforeach
 </div>
 <script>
     document.addEventListener('DOMContentLoaded', function() {

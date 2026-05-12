@@ -101,9 +101,9 @@
 <div class="flex justify-between items-center w-full px-8 py-4 max-w-screen-2xl mx-auto">
 <div class="font-serif italic text-2xl text-sage-800 dark:text-sage-200">Sanctuary</div>
 <nav class="hidden md:flex items-center gap-10">
-<a class="text-stone-500 dark:text-stone-400 hover:text-sage-600 hover:bg-sage-50/30 dark:hover:bg-sage-900/30 transition-colors ease-in-out duration-300" href="#">Dashboard</a>
-<a class="text-sage-800 dark:text-sage-200 font-semibold border-b-2 border-sage-600 hover:bg-sage-50/30 dark:hover:bg-sage-900/30 transition-colors ease-in-out duration-300" href="#">Library</a>
-<a class="text-stone-500 dark:text-stone-400 hover:text-sage-600 hover:bg-sage-50/30 dark:hover:bg-sage-900/30 transition-colors ease-in-out duration-300" href="#">Progress</a>
+                <a class="text-stone-500 dark:text-stone-400 hover:text-sage-600 hover:bg-sage-50/30 dark:hover:bg-sage-900/30 transition-colors ease-in-out duration-300" href="{{ route('dashboard') }}">Dashboard</a>
+                <a class="text-sage-800 dark:text-sage-200 font-semibold border-b-2 border-sage-600 hover:bg-sage-50/30 dark:hover:bg-sage-900/30 transition-colors ease-in-out duration-300" href="{{ route('library') }}">Library</a>
+                <a class="text-stone-500 dark:text-stone-400 hover:text-sage-600 hover:bg-sage-50/30 dark:hover:bg-sage-900/30 transition-colors ease-in-out duration-300" href="{{ route('progress') }}">Progress</a>
 </nav>
 <div class="flex items-center gap-4">
 <button class="p-2 rounded-full hover:bg-sage-50/30 dark:hover:bg-sage-900/30 transition-colors duration-300">
@@ -122,9 +122,9 @@
                     Descend beneath the noise of daily life. A technique designed to ground your nervous system by mimicking the slow, heavy pressure of the deep sea.
                 </p>
 <div class="mt-12">
-<button class="rounded-full bg-primary text-on-primary px-10 py-5 text-lg font-bold hover:scale-[1.02] active:scale-95 transition-all duration-300 editorial-shadow">
+                    <a href="{{ route('session', $technique->id) }}" class="inline-block rounded-full bg-primary text-on-primary px-10 py-5 text-lg font-bold hover:scale-[1.02] active:scale-95 transition-all duration-300 editorial-shadow">
                         Start Guided Session
-                    </button>
+                    </a>
 </div>
 </div>
 <div class="md:col-span-6 lg:col-span-7 order-1 md:order-2 relative h-[400px] md:h-[600px]">
@@ -235,21 +235,21 @@
 </main>
 <!-- BottomNavBar -->
 <nav class="fixed bottom-0 left-0 right-0 z-50 flex justify-around items-center p-3 bg-stone-50/70 dark:bg-stone-900/70 backdrop-blur-2xl rounded-full mb-6 mx-auto w-[90%] max-w-md shadow-xl shadow-stone-900/5 md:hidden">
-<a class="flex flex-col items-center justify-center text-stone-400 dark:text-stone-500 hover:text-sage-500 px-5 py-2 hover:scale-105 transition-transform duration-300 active:scale-95" href="#">
+<a class="flex flex-col items-center justify-center text-stone-400 dark:text-stone-500 hover:text-sage-500 px-5 py-2 hover:scale-105 transition-transform duration-300 active:scale-95" href="{{ route('dashboard') }}">
 <span class="material-symbols-outlined">home</span>
 <span class="font-sans text-[11px] font-medium uppercase tracking-widest mt-1">Home</span>
 </a>
-<a class="flex flex-col items-center justify-center bg-sage-100 dark:bg-sage-900/40 text-sage-800 dark:text-sage-100 rounded-full px-5 py-2 hover:scale-105 transition-transform duration-300 active:scale-95" href="#">
+<a class="flex flex-col items-center justify-center bg-sage-100 dark:bg-sage-900/40 text-sage-800 dark:text-sage-100 rounded-full px-5 py-2 hover:scale-105 transition-transform duration-300 active:scale-95" href="{{ route('library') }}">
 <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">self_care</span>
 <span class="font-sans text-[11px] font-medium uppercase tracking-widest mt-1">Meditate</span>
 </a>
-<a class="flex flex-col items-center justify-center text-stone-400 dark:text-stone-500 hover:text-sage-500 px-5 py-2 hover:scale-105 transition-transform duration-300 active:scale-95" href="#">
+<a class="flex flex-col items-center justify-center text-stone-400 dark:text-stone-500 hover:text-sage-500 px-5 py-2 hover:scale-105 transition-transform duration-300 active:scale-95" href="{{ route('journal') }}">
 <span class="material-symbols-outlined">menu_book</span>
 <span class="font-sans text-[11px] font-medium uppercase tracking-widest mt-1">Journal</span>
 </a>
-<a class="flex flex-col items-center justify-center text-stone-400 dark:text-stone-500 hover:text-sage-500 px-5 py-2 hover:scale-105 transition-transform duration-300 active:scale-95" href="#">
-<span class="material-symbols-outlined">smart_toy</span>
-<span class="font-sans text-[11px] font-medium uppercase tracking-widest mt-1">Friend</span>
+<a class="flex flex-col items-center justify-center text-stone-400 dark:text-stone-500 hover:text-sage-500 px-5 py-2 hover:scale-105 transition-transform duration-300 active:scale-95" href="{{ route('progress') }}">
+<span class="material-symbols-outlined">bar_chart</span>
+<span class="font-sans text-[11px] font-medium uppercase tracking-widest mt-1">Stats</span>
 </a>
 </nav>
 </body></html>

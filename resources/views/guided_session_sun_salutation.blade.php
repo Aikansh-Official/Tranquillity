@@ -101,13 +101,12 @@
 <nav class="fixed top-0 w-full z-50 flex justify-between items-center px-8 py-6 bg-transparent text-sage-700 dark:text-sage-400 font-notoSerif text-lg no-line tonal shifts flat no shadows">
 <div class="font-notoSerif italic text-sage-800 dark:text-sage-200 text-2xl font-bold tracking-tight">The Living Atmosphere</div>
 <div class="flex items-center gap-8">
-<button class="hover:opacity-80 transition-opacity active:scale-95 text-sage-900 dark:text-sage-100 font-bold">Breathe</button>
-<button class="hover:opacity-80 transition-opacity active:scale-95 text-sage-600 dark:text-sage-400">Meditate</button>
-<button class="hover:opacity-80 transition-opacity active:scale-95 text-sage-600 dark:text-sage-400">Move</button>
-<button class="hover:opacity-80 transition-opacity active:scale-95 text-sage-600 dark:text-sage-400">Journal</button>
-<div class="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center">
+<a href="{{ route('dashboard') }}" class="hover:opacity-80 transition-opacity active:scale-95 text-stone-600 dark:text-stone-400">Dashboard</a>
+<a href="{{ route('library') }}" class="hover:opacity-80 transition-opacity active:scale-95 text-stone-600 dark:text-stone-400">Library</a>
+<a href="{{ route('progress') }}" class="hover:opacity-80 transition-opacity active:scale-95 text-stone-600 dark:text-stone-400">Stats</a>
+<a href="{{ route('dashboard') }}" class="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center">
 <span class="material-symbols-outlined text-primary">close</span>
-</div>
+</a>
 </div>
 </nav>
 <!-- Main Content Canvas -->

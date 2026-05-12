@@ -21,9 +21,9 @@ Route::middleware(['auth', 'verified'])->group(function () {
         return view('daily_journal');
     })->name('journal');
 
-    Route::get('/profile', function () {
-        return view('profile');
-    })->name('profile.edit');
+    Route::get('/profile', [App\Http\Controllers\ProfileController::class, 'edit'])->name('profile.edit');
+    Route::patch('/profile', [App\Http\Controllers\ProfileController::class, 'update'])->name('profile.update');
+    Route::delete('/profile', [App\Http\Controllers\ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
 

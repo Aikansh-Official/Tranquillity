@@ -128,7 +128,7 @@
 <nav class="fixed top-0 w-full z-50 flex justify-between items-center px-8 py-6 bg-transparent">
 <div class="font-notoSerif italic text-sage-800 dark:text-sage-200 text-xl font-headline tracking-tight">The Living Atmosphere</div>
 <div class="flex items-center gap-6">
-<button class="material-symbols-outlined text-sage-700 dark:text-sage-400 text-2xl hover:opacity-80 transition-opacity active:scale-95">close</button>
+<a href="{{ route('dashboard') }}" class="material-symbols-outlined text-sage-700 dark:text-sage-400 text-2xl hover:opacity-80 transition-opacity active:scale-95">close</a>
 </div>
 </nav>
 <!-- Main Content Canvas -->
@@ -216,10 +216,10 @@
 </main>
 <!-- Floating End Session Button (Task Specific) -->
 <div class="fixed bottom-10 left-1/2 -translate-x-1/2 z-50">
-<button class="bg-primary text-on-primary px-10 py-4 rounded-full font-label font-semibold shadow-2xl flex items-center gap-3 hover:opacity-90 transition-all active:scale-95 group">
+<a href="{{ route('dashboard') }}" class="bg-primary text-on-primary px-10 py-4 rounded-full font-label font-semibold shadow-2xl flex items-center gap-3 hover:opacity-90 transition-all active:scale-95 group">
 <span class="material-symbols-outlined text-sm group-hover:rotate-90 transition-transform">close</span>
             End Session
-        </button>
+        </a>
 </div>
 <!-- SideNavBar (Suppressed for focused session flow - Hidden by logic) -->
 <!-- The "Destination Rule" suggests suppressing the Nav shell for focused journeys like breathing sessions. -->

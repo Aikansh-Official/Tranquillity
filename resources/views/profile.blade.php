@@ -111,7 +111,7 @@
         {{-- Update Name & Email --}}
         <div class="bg-surface-container-low rounded-xl p-8 mb-6">
             <h2 class="font-['Noto_Serif'] text-2xl mb-6 text-on-surface">Account Information</h2>
-            <form method="POST" action="{{ route('profile.edit') }}" class="space-y-5">
+            <form method="POST" action="{{ route('profile.update') }}" class="space-y-5">
                 @csrf
                 @method('PATCH')
                 <div>
